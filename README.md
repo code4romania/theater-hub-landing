@@ -4,6 +4,7 @@ Super easy landing page scaffolded with Yeoman Gulp Webapp generator. Automated 
 
 ## Install
 ```
+npm install -g bower
 npm install && bower install
 ```
 
