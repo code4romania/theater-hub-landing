@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^code4.ro [NC]
+RewriteRule ^(.*)$ http://www.code4.ro/$1 [L,R=301]

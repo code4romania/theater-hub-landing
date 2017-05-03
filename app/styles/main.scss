@@ -1,0 +1,75 @@
+@import 'variables';
+
+// bower:scss
+// endbower
+
+@import url(//fonts.googleapis.com/css?family=Cardo:400,700,400italic&subset=latin,latin-ext);
+@import url(//fonts.googleapis.com/icon?family=Material+Icons);
+
+body {
+  background: $color-light;
+  border-left: 10px solid $color-primary;
+  color: $color-text;
+  font-family: 'Cardo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 120%;
+  height: 100vh;
+}
+
+a {
+  color: $color-secondary;
+  text-decoration: none;
+}
+
+.underline {
+  span {
+    border-bottom: 1px solid $color-secondary;
+  }
+
+  &:hover {
+    span {
+      border-bottom-color: darken($color-secondary, 20);
+    }
+  }
+}
+
+.manifesto {
+  box-sizing: border-box;
+  max-width: 700px;
+  padding: 50px 30px;
+  position: relative;
+  width: 100%;
+
+  @media (min-width: 480px) {
+    padding: 50px 5%;
+  }
+
+  &::after {
+    background: $color-primary;
+    content: '';
+    display: block;
+    height: 100%;
+    left: -10px;
+    position: absolute;
+    top: 0;
+    width: 10px;
+  }
+}
+
+.brand {
+  display: inline-block;
+  left: -25px;
+  position: relative;
+}
+
+.contact {
+  display: inline-block;
+  margin: 10px 0 40px;
+  text-decoration: none;
+
+  i {
+    margin-right: 10px;
+    position: relative;
+    top: 6px;
+  }
+}
+
